@@ -1,0 +1,6 @@
+{
+    "name": "Powercord Plugin/Theme Downloader",
+    "id": "powercord-plugin-downloader",
+    "description": "A powercord plugin and theme downloader for kernel. (pc-compat required)",
+    "dependencies": ["strencher.webpack", "strencher.pc-compat"]
+}
