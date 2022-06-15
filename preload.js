@@ -14,7 +14,9 @@ contextBridge.exposeInMainWorld("download", async (link, plugin) => {
             cwd: pluginsPath,
         })
 
-        return { reloadMessage: "Please reload discord with Ctrl+R" }
+        return {
+            reloadMessage: "Please reload discord with Ctrl+R.",
+        }
     } catch (error) {
         return { error }
     }

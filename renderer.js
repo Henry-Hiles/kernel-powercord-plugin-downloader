@@ -60,6 +60,14 @@ export default new (class PluginDownloader {
                                                 isPluginChannel
                                             )
 
+                                        isPluginChannel
+                                            ? powercord.pluginManager.enablePlugin(
+                                                  gitURL[7]
+                                              )
+                                            : powercord.styleManager.enableTheme(
+                                                  gitURL[7]
+                                              )
+
                                         if (reloadMessage) {
                                             Toasts.showToast(
                                                 Toasts.createToast(
